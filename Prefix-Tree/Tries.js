@@ -1,10 +1,11 @@
-
 class TrieNode{
 	constructor(){ 
 		this.children = {}
 		this.endOfWord = false 
 	}
-}
+} 
+
+
 class Tries { 
 	constructor(){ 
 		this.root = new TrieNode()
