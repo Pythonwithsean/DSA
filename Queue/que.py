@@ -1,4 +1,6 @@
-q = [-1] * (20)
+import sys 
+
+q = [None] * (20)
 front = len(q) - 1
 back = len(q) - 1
 
@@ -9,13 +11,13 @@ def enqueue(val):
 def dequeue(): 
 	global front
 	front = (front + 1) % (len(q))
-	q[front] = -1
+	q[front] = None
 def peek(): 
 	global front
 	global back
 	if front == back: 
 		return "Empty"
-	return q[(front + 1) % len(q)] if q[(front + 1) % len(q)] != -1 else "Empty"
+	return q[(front + 1) % len(q)] if q[(front + 1) % len(q)] != None else "Empty"
 
 enqueue(100)
 enqueue(99)
