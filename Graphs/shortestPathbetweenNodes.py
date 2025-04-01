@@ -1,5 +1,6 @@
 import collections
 def createGraph(): 
+	# Graph needs to be directed without cycles
 	return { 
 		'1': ['2','4'],
 		'2': ['5'],
@@ -13,7 +14,6 @@ def createGraph():
 
 
 def shortestPath(graph, start, end, predecessors):
-	print(start, end)
 	queue = collections.deque([start])
 	while queue: 
 		current = queue.popleft()
