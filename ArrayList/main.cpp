@@ -25,7 +25,7 @@ public:
 		if (index >= size)
 		{
 			cerr << "Out of bounds" << endl;
-			return -1;
+			throw runtime_error("Out of Bounds");
 		}
 		return arr[index];
 	}
@@ -61,19 +61,9 @@ public:
 int main()
 {
 	ArrayList<int> arr;
-	cout << arr.Size() << endl;
-	arr.Add(1);
-	arr.Add(2);
-	arr.Add(3);
-	arr.Add(4);
-	arr.Add(5);
-	arr.Add(6);
-	arr.Add(7);
-	arr.Add(7);
-	arr.Add(7);
-	arr.Add(7);
-	arr.Add(7);
-	cout << arr.Size() << "\n";
+	const int x = 22;
+	const int *const ptr = &x;
+	cout << arr.Get(0) << "\n";
 	arr.showArray();
 	return 0;
 }
