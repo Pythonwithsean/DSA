@@ -3,6 +3,8 @@
 
 using namespace std;
 
+#define MAX_ARR_CAPACITY 10
+
 template <typename T>
 class ArrayList
 {
@@ -12,7 +14,7 @@ private:
 	T *arr;
 
 public:
-	ArrayList() : size(0), capacity(10)
+	ArrayList() : size(0), capacity(MAX_ARR_CAPACITY)
 	{
 		arr = new T[capacity];
 	};
