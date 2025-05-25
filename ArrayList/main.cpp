@@ -62,10 +62,6 @@ public:
 
 int main()
 {
-	ArrayList<int> arr;
-	const int x = 22;
-	const int *const ptr = &x;
-	cout << arr.Get(0) << "\n";
-	arr.showArray();
+
 	return 0;
 }
